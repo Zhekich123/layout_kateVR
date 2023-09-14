@@ -1,0 +1,34 @@
+"use strict";
+const choosedQuanity = document.querySelector(".btn-list-quanity");
+const quanities = document.querySelectorAll(".dropdown-item--quanity");
+const arrow = document.querySelector(".arrow-list--quanity");
+const arrowImg = arrow.outerHTML;
+const dataPrice = document.querySelector(".price-data");
+function addQuanity(event) {
+    const dataValue = event.target.dataset.value;
+    choosedQuanity.innerHTML = dataValue + arrowImg;
+    const currentPrice = parseFloat(dataPrice.innerHTML);
+    let newPrice;
+    if (dataValue === "2") {
+        newPrice = currentPrice * parseFloat(dataValue);
+        dataPrice.innerHTML = newPrice;
+    } else if (dataValue === "3") {
+        newPrice = currentPrice * parseFloat(dataValue);
+        dataPrice.innerHTML = newPrice;
+    } else dataPrice.innerHTML = "1200";
+}
+quanities.forEach(function(quanity) {
+    quanity.addEventListener("click", addQuanity);
+});
+// country List
+const counryChoose = document.querySelector(".county-choose");
+const country = document.querySelectorAll(".dropdown-item--country");
+function addCountry(event) {
+    const dataValue = event.target.dataset.value;
+    counryChoose.innerHTML = dataValue + arrowImg;
+}
+country.forEach(function(countries) {
+    countries.addEventListener("click", addCountry);
+});
+
+//# sourceMappingURL=buy-page.52dcd2c7.js.map
