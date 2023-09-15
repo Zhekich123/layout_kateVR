@@ -30,5 +30,15 @@ function addCountry(event) {
 country.forEach(function(countries) {
     countries.addEventListener("click", addCountry);
 });
+// city List
+const cityChoose = document.querySelector(".city-choose");
+const city = document.querySelectorAll(".dropdown-item--city");
+function addCity(event) {
+    const dataValue = event.target.dataset.value;
+    cityChoose.innerHTML = dataValue + arrowImg;
+}
+city.forEach(function(cities) {
+    cities.addEventListener("click", addCity);
+});
 
 //# sourceMappingURL=buy-page.52dcd2c7.js.map

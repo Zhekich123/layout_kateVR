@@ -1,4 +1,4 @@
-@import "bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 @import "/src/scss/vars.scss";
 @import "/src/scss/mixins.scss";
 
@@ -1236,11 +1236,15 @@ button.btn-close {
 }
 
 .message-text__contact {
+  display: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: $text-color;
 
   @include onBigPhone {
     display: flex;
     font-size: 12px;
-    margin: 27px 0 0 10px;
+    margin: 27px 0 0 35px;
   }
 }
 

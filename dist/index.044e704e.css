@@ -14484,9 +14484,18 @@ button.btn-close {
   .message-text {
     display: none;
   }
+}
 
+.message-text__contact {
+  color: #929292;
+  font-size: 16px;
+  font-weight: 400;
+  display: none;
+}
+
+@media (width <= 500px) {
   .message-text__contact {
-    margin: 27px 0 0 10px;
+    margin: 27px 0 0 35px;
     font-size: 12px;
     display: flex;
   }
