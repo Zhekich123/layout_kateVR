@@ -1,5 +1,0 @@
-const e=document.querySelector(".btn-list-quanity"),t=document.querySelectorAll(".dropdown-item--quanity"),n=document.querySelector(".arrow-list--quanity"),o=n.outerHTML,r=document.querySelector(".price-data");function c(t){let n;let c=t.target.dataset.value;e.innerHTML=c+o;let u=parseFloat(r.innerHTML);"2"===c?(n=u*parseFloat(c),r.innerHTML=n):"3"===c?(n=u*parseFloat(c),r.innerHTML=n):r.innerHTML="1200"}t.forEach(function(e){e.addEventListener("click",c)});// country List
-const u=document.querySelector(".county-choose"),a=document.querySelectorAll(".dropdown-item--country");function i(e){let t=e.target.dataset.value;u.innerHTML=t+o}a.forEach(function(e){e.addEventListener("click",i)});// city List
-const l=document.querySelector(".city-choose"),d=document.querySelectorAll(".dropdown-item--city");function s(e){let t=e.target.dataset.value;l.innerHTML=t+o}d.forEach(function(e){e.addEventListener("click",s)});//# sourceMappingURL=buy-page.5c534844.js.map
-
-//# sourceMappingURL=buy-page.5c534844.js.map
